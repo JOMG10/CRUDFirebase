@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {CrudFireBaseService} from "../../services/crud-fire-base.service";
+import 'flowbite';
 
 @Component({
   selector: 'app-sidebar',
