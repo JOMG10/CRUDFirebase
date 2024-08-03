@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {CRUDLayoutComponent} from "./components/crudlayout/crudlayout.component";
+import {CRUDLayoutComponent} from "./pages/crudlayout/crudlayout.component";
 import {SidebarComponent} from "./components/sidebar/sidebar.component";
 import {NavComponent} from "./components/nav/nav.component";
 import {MainComponent} from "./components/main/main.component";
