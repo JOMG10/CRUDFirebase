@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {CRUDLayoutComponent} from "../crudlayout/crudlayout.component";
+import {CRUDLayoutComponent} from "../../pages/crudlayout/crudlayout.component";
 import {CrudFireBaseService} from "../../services/crud-fire-base.service";
 import {NgClass, NgIf} from "@angular/common";
 import 'flowbite';
-import {DashboardComponent} from "../dashboard/dashboard.component";
-import {CRUDDatosComponent} from "../cruddatos/cruddatos.component";
+import {DashboardComponent} from "../../pages/dashboard/dashboard.component";
 import {RouterOutlet} from "@angular/router";
+import {DatosCompartidosService} from "../../services/datos-compartidos.service";
 
 @Component({
   selector: 'app-main',
@@ -14,7 +14,6 @@ import {RouterOutlet} from "@angular/router";
     CRUDLayoutComponent,
     NgIf,
     DashboardComponent,
-    CRUDDatosComponent,
     NgClass,
     RouterOutlet
   ],
@@ -26,7 +25,7 @@ export class MainComponent implements OnInit{
 
   variable:any
 
-  constructor(private compartirDatosService: CrudFireBaseService) {}
+  constructor(private compartirDatosService: DatosCompartidosService) {}
 
   ngOnInit() {
     this.compartirDatosService.variable$.subscribe(valor => {
