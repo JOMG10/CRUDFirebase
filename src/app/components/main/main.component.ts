@@ -5,9 +5,7 @@ import {NgClass, NgIf} from "@angular/common";
 import 'flowbite';
 import {DashboardComponent} from "../dashboard/dashboard.component";
 import {CRUDDatosComponent} from "../cruddatos/cruddatos.component";
-
-
-
+import {RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-main',
@@ -17,7 +15,8 @@ import {CRUDDatosComponent} from "../cruddatos/cruddatos.component";
     NgIf,
     DashboardComponent,
     CRUDDatosComponent,
-    NgClass
+    NgClass,
+    RouterOutlet
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
