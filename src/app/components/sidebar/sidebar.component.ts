@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {CrudFireBaseService} from "../../services/crud-fire-base.service";
 import 'flowbite';
 import {RouterLink} from "@angular/router";
+import {DatosCompartidosService} from "../../services/datos-compartidos.service";
 
 @Component({
   selector: 'app-sidebar',
@@ -18,11 +19,11 @@ export class SidebarComponent {
   dashboard="dashboard"
 
 
-  constructor(private crudService: CrudFireBaseService) {
+  constructor(private datosCompartidosService: DatosCompartidosService) {
   }
 
   cambiarVariable(pagina: string){
-    this.crudService.cambiarVariable(pagina)
+    this.datosCompartidosService.cambiarVariable(pagina)
   }
 
 }
