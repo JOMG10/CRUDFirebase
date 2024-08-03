@@ -1,7 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {CRUDLayoutComponent} from "../crudlayout/crudlayout.component";
 import {CrudFireBaseService} from "../../services/crud-fire-base.service";
-import {NgIf} from "@angular/common";
+import {NgClass, NgIf} from "@angular/common";
+import 'flowbite';
+import {DashboardComponent} from "../dashboard/dashboard.component";
+import {CRUDDatosComponent} from "../cruddatos/cruddatos.component";
+
 
 
 
@@ -10,7 +14,10 @@ import {NgIf} from "@angular/common";
   standalone: true,
   imports: [
     CRUDLayoutComponent,
-    NgIf
+    NgIf,
+    DashboardComponent,
+    CRUDDatosComponent,
+    NgClass
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
