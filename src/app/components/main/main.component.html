@@ -1,8 +1,5 @@
+
 <main class="p-4 md:ml-64 h-auto pt-20" >
-  <app-crudlayout [ngClass]="{'hidden': variable !== 'home'}"></app-crudlayout>
-
-    <div [ngClass]="{'hidden': variable !== 'dashboard'}">
-    <app-dashboard></app-dashboard>
-  </div>
-
+    <app-crudlayout [ngClass]="{'hidden': variable !== 'home'}"></app-crudlayout>
+    <app-dashboard [ngClass]="{'hidden': variable !== 'dashboard'}"></app-dashboard>
 </main>
