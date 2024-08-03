@@ -24,12 +24,13 @@ export class MainComponent implements OnInit{
 
   ngOnInit() {
     this.compartirDatosService.variable$.subscribe(valor => {
-      if (valor==="home"){
+
+      if (valor===null){
+        this.variable = "dashboard";
+      }else if(valor==="home"){
         this.variable = "home";
       }else if(valor==="dashboard"){
         this.variable = "dashboard";
-
-
       }
 
     });
