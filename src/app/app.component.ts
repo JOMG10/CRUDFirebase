@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {CRUDLayoutComponent} from "./components/crudlayout/crudlayout.component";
 import {SidebarComponent} from "./components/sidebar/sidebar.component";
@@ -13,6 +13,8 @@ import {MainComponent} from "./components/main/main.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'CrudFirebase';
+export class AppComponent  {
+  title = 'web-app';
+
+
 }
