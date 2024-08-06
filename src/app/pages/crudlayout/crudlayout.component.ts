@@ -19,11 +19,7 @@ export class CRUDLayoutComponent {
 
   isModalOpen = false;
 
-
-  private productos: Productos[];
-
-
-
+   productos: Productos[] = [];
 
   openModal() {
     this.isModalOpen = true;
