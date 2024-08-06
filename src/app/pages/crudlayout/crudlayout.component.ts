@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import 'flowbite';
-import { Directive, ElementRef, Renderer2, Input, OnChanges } from '@angular/core';
 import {NgClass, NgForOf, NgIf} from "@angular/common";
 import {Productos} from "../../models/produtos.models";
 import {FormsModule} from "@angular/forms";
