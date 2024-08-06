@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import 'flowbite';
 import { Directive, ElementRef, Renderer2, Input, OnChanges } from '@angular/core';
 import {NgClass} from "@angular/common";
+import {Productos} from "../../models/produtos.models";
 
 
 @Component({
@@ -17,9 +18,12 @@ export class CRUDLayoutComponent {
 
 
   isModalOpen = false;
-  isModalDelete=false
 
-  ismodal=false
+
+  private productos: Productos[];
+
+
+
 
   openModal() {
     this.isModalOpen = true;
@@ -29,19 +33,4 @@ export class CRUDLayoutComponent {
     this.isModalOpen = false;
   }
 
-  openModalDelete() {
-    this.isModalDelete = true
-  }
-
-  closeModalDelete() {
-    this.isModalDelete = false
-  }
-
-  openM() {
-    this.ismodal=true
-  }
-
-  closeM(){
-    this.ismodal=false
-  }
 }
